@@ -1,0 +1,27 @@
+.header
+  background-image: url(../images/mobile/image-hero.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  margin-bottom: 8rem
+  height: 65rem
+  @media screen and (min-width: 768px)
+    background-image: url(../images/desktop/image-hero.jpg)
+    background-position-x: center
+
+.hero
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100%
+  @media screen and (min-width: 768px)
+    justify-content: start
+  &__heading
+    border: 2px solid white
+    padding: 2.35rem 2.25rem
+    height: 20rem
+    max-width: 32.5rem
+    @media screen and (min-width: 768px)
+      padding-top: 3.8rem 
+      padding-left: 3.6rem
+      height: 28rem
+      max-width: 65.3rem

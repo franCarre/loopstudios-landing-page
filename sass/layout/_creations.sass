@@ -1,0 +1,94 @@
+.creations
+  margin-bottom: 8rem
+  &>.container
+    display: flex
+    flex-direction: column
+    text-align: center
+    @media screen and (min-width: 992px)
+      text-align: left
+  &__heading
+    display: flex
+    justify-content: space-between
+    margin: auto
+    @media screen and (min-width: 768px)
+      margin: 0
+  &__projects
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(8, 1fr)
+    gap: 2.4rem
+    @media screen and (min-width: 576px)
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(4, 1fr)
+    @media screen and (min-width: 992px)
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+  &__project
+    background-repeat: no-repeat
+    background-size: cover
+    background-position-x: center
+    cursor: pointer
+    display: flex
+    align-items: flex-end
+    padding: 2rem
+    position: relative
+    height: 12rem
+    width: 100%
+    transition: 0.5s ease
+    @media screen and (min-width: 992px)
+      padding: 3.2rem
+      height: 45rem
+    &::before
+      background-color: $col-white
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      opacity: 0
+    &:hover
+      transform: scale(1.02)
+      &::before
+        transition: 0.5s ease
+        opacity: 0.4
+      &>.creations__project__name
+        font-weight: bold
+        transition: 0.5s ease
+        color: black       
+    &__name
+      text-align: start
+      max-width: 17rem
+      z-index: 2
+    &--1
+      background-image: url(../images/mobile/image-deep-earth.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-deep-earth.jpg)
+    &--2
+      background-image: url(../images/mobile/image-night-arcade.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-night-arcade.jpg)       
+    &--3
+      background-image: url(../images/mobile/image-soccer-team.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-soccer-team.jpg)
+    &--4
+      background-image: url(../images/mobile/image-grid.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-grid.jpg)
+    &--5
+      background-image: url(../images/mobile/image-from-above.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-from-above.jpg)
+    &--6
+      background-image: url(../images/mobile/image-pocket-borealis.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-pocket-borealis.jpg)
+    &--7
+      background-image: url(../images/mobile/image-curiosity.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-curiosity.jpg)
+    &--8
+      background-image: url(../images/mobile/image-fisheye.jpg)
+      @media screen and (min-width: 992px)
+        background-image: url(../images/desktop/image-fisheye.jpg)
